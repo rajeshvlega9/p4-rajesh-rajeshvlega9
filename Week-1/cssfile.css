@@ -3,37 +3,36 @@
 
 * {
  font-family: 'Lato',sans-serif;
-
 }
+
 body {
     border:2px solid #333 ;
 }
 #topImg {
     float: left;
-    margin-right: 40px;
+    margin-right: 30px;
     
 }
-
 #bottom {
     float: left;
-    margin-top: auto;
+    margin-left: 2.0em;
+    margin-top: 20px;
     margin-right: 10px;
 }
 
-
 span {
     font: 1em;
-    background-color:#9fadb2;
+    background-color:#dae5e9;
     color: blueviolet;
     border: 2px solid #000;  
 }   
 aside {
  position: absolute;
+ float:left;
  width: 1.5em;
- color: blacK;
+ color: black;
  background-color: lightgrey;
  padding: 6px;
- height: auto;
  justify-content:center;
  }
 
@@ -55,30 +54,45 @@ h2 {
     font-size: small;
     color:azure;
     margin-left: 10px;
+    margin-top: 20px;
+    line-height: 40%;
+
+}
+.subTitleBottom {
+    font-size: small;
+    color:azure;
+    margin-left: 10px;
+    margin-top: auto ;
+
 }
 .subtitleClose {
     font-size: small;
     color:azure;
     margin-left: 10px;
-
 }
 .control {
+    display:flow-root;
     font-size: small;
     float:initial;
-    background-color: #3b286b;
+    background-color: hsl(257, 97%, 64%);
     width: auto;
+    color:azure;
+    text-align:right;
     margin-left:auto;
 }
 i.la {
     font-size: 1em;
-    margin-right: 1.8em;   
-    margin-bottom: 2.0em;
-    margin-top: 2.1em;
+    margin-right: 9.3em;   
+    margin-bottom: 3.7em;
+    margin-top: 0.1em;
+}
+i.lar {
+    margin-bottom: auto;
 }
 i.las {
     margin-top: 5.8em;
     margin-right: 2.8em;
-    font-style: normal;
+    font-style: inherit;
 }
 .tabDetails {
  align-items: inherit;
@@ -89,17 +103,17 @@ table tr {
     column-rule-color: none;
     line-height: 2.5em;    
 }
+
 table tr:nth-child(even) {
     background: lightgrey;
 }
+
 footer {
     border-block-color: black;
     border-block-width: 2px;
     border: 10px;
-    background-color: #3b286b;
-    padding: 10px;
+    background-color: hsl(257, 97%, 64%);
+    padding: auto;
     width: auto;
-    height: 80px;
-    
+    height: auto;
 }
-
