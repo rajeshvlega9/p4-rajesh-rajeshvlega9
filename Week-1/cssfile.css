@@ -1,0 +1,105 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+* {
+ font-family: 'Lato',sans-serif;
+
+}
+body {
+    border:2px solid #333 ;
+}
+#topImg {
+    float: left;
+    margin-right: 40px;
+    
+}
+
+#bottom {
+    float: left;
+    margin-top: auto;
+    margin-right: 10px;
+}
+
+
+span {
+    font: 1em;
+    background-color:#9fadb2;
+    color: blueviolet;
+    border: 2px solid #000;  
+}   
+aside {
+ position: absolute;
+ width: 1.5em;
+ color: blacK;
+ background-color: lightgrey;
+ padding: 6px;
+ height: auto;
+ justify-content:center;
+ }
+
+#top{
+ padding: 90px;
+ background-color: rgb(71, 68, 64);
+ width: auto;
+}
+h2 {
+    color: aliceblue;    
+}
+.caption {
+    margin: 40px;
+    font-size: large;
+    color:azure;
+    margin-left:10px
+}
+.subtitle {
+    font-size: small;
+    color:azure;
+    margin-left: 10px;
+}
+.subtitleClose {
+    font-size: small;
+    color:azure;
+    margin-left: 10px;
+
+}
+.control {
+    font-size: small;
+    float:initial;
+    background-color: #3b286b;
+    width: auto;
+    margin-left:auto;
+}
+i.la {
+    font-size: 1em;
+    margin-right: 1.8em;   
+    margin-bottom: 2.0em;
+    margin-top: 2.1em;
+}
+i.las {
+    margin-top: 5.8em;
+    margin-right: 2.8em;
+    font-style: normal;
+}
+.tabDetails {
+ align-items: inherit;
+ margin: 2.4em;
+}
+table tr {
+    column-gap: 30px;
+    column-rule-color: none;
+    line-height: 2.5em;    
+}
+table tr:nth-child(even) {
+    background: lightgrey;
+}
+footer {
+    border-block-color: black;
+    border-block-width: 2px;
+    border: 10px;
+    background-color: #3b286b;
+    padding: 10px;
+    width: auto;
+    height: 80px;
+    
+}
+
