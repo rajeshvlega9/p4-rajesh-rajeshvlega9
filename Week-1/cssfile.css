@@ -89,12 +89,6 @@ i.la {
     margin-right: 9.3em;   
     margin-bottom: 3.7em;
     margin-top: 0.1em;
-<<<<<<< HEAD
-=======
-}
-i.lar {
-    margin-bottom: auto;
->>>>>>> ed889a64cbb1a72b828f30938227b6d713be2650
 }
 i.las {
     margin-top: 5.8em;
@@ -109,12 +103,7 @@ li p{
 li{
     padding: 10px;
 }
-<<<<<<< HEAD
 li:nth-child(even) {
-=======
-
-table tr:nth-child(even) {
->>>>>>> ed889a64cbb1a72b828f30938227b6d713be2650
     background: lightgrey;
 }
 
