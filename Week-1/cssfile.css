@@ -57,20 +57,36 @@ aside i.la {
        color:azure;
        margin-left:10px
    }
-   .subtitle {
-       font-size: small;
-       color:azure;
-       margin-left: 10px;
-       margin-top: 20px;
-       line-height: 40%;
-   
+.subtitle {
+    font-size: small;
+    color:azure;
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 40%;
    }
    
-   .subtitleClose {
-       font-size: small;
-       color:azure;
-       margin-left: 10px;
+.subtitleClose {
+    font-size: small;
+    color:azure;
+    margin-left: 10px;
    }
+
+ul{
+	display:inline;
+	margin-block-start: 4px;
+	margin-block-end: 4px;
+	margin-bottom:70px;
+}
+li p{
+    display: inline-table;
+    width: 310px;
+}
+li{
+    list-style-type: none;
+}
+li:nth-child(even) {
+    background: lightgrey;
+}
    
 .control {
     display:flow-root;
@@ -82,31 +98,7 @@ aside i.la {
     text-align:right;
     margin-left:auto;
 }
-.spacing {
-    padding: 27px;
-}
-i.la {
-    font-size: 1em;
-    margin-right: 9.3em;   
-    margin-bottom: 3.7em;
-    margin-top: 0.1em;
-}
-i.las {
-    margin-top: 5.8em;
-    margin-right: 2.8em;
-    font-style: inherit;
-}
 
-li p{
-    display: inline-table;
-    width: 300px;
-}
-li{
-    padding: 10px;
-}
-li:nth-child(even) {
-    background: lightgrey;
-}
 
 footer {
     border-block-color: black;
