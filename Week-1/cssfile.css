@@ -44,41 +44,34 @@ aside i.la {
        margin-top: 0.3em;
        margin-bottom: 1.5em;
    }
-
-#top{
- padding: 90px;
- background-color: rgb(71, 68, 64);
- width: auto;
-}
-h2 {
-    color: aliceblue;    
-}
-.caption {
-    margin: 40px;
-    font-size: large;
-    color:azure;
-    margin-left:10px
-}
-.subtitle {
-    font-size: small;
-    color:azure;
-    margin-left: 10px;
-    margin-top: 20px;
-    line-height: 40%;
-
-}
-.subTitleBottom {
-    font-size: small;
-    color:azure;
-    margin-left: 10px;
-    margin-top: auto ;
-
-}
-.subtitleClose {
-    font-size: small;
-    color:azure;
-    margin-left: 10px;
-}
+   #top{
+    padding: 90px;
+    background-color: rgb(71, 68, 64);
+    width: auto;
+   }
+   h2 {
+       color: aliceblue;    
+   }
+   .caption {
+       font-size: large;
+       color:azure;
+       margin-left:10px
+   }
+   .subtitle {
+       font-size: small;
+       color:azure;
+       margin-left: 10px;
+       margin-top: 20px;
+       line-height: 40%;
+   
+   }
+   
+   .subtitleClose {
+       font-size: small;
+       color:azure;
+       margin-left: 10px;
+   }
+   
 .control {
     display:flow-root;
     font-size: small;
