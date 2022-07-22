@@ -88,24 +88,32 @@ li:nth-child(even) {
     background: lightgrey;
 }
    
-.control {
-    display:flow-root;
-    font-size: small;
-    float:initial;
-    background-color: hsl(257, 97%, 64%);
-    width: auto;
-    color:azure;
-    text-align:right;
-    margin-left:auto;
+footer {
+	position:fixed;
+	bottom:0;
+} 
+.bottom {
+	display:flex;
+    background-color: rgb(67, 1, 232);
+	
 }
 
-
-footer {
-    border-block-color: black;
-    border-block-width: 2px;
-    border: 10px;
-    background-color: hsl(257, 97%, 64%);
-    padding: auto;
-    width: auto;
-    height: auto;
+.subTitleBottom {
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+	width:40.3em;
+	padding:8px;
+	color:azure;
+}
+.control {
+    display:flex;
+    flex-direction: row; 
+	margin-top:50px;
+    color: azure;
+	width:40.3em;
+	
+}
+ div i.la {
+	margin-right:7em;
 }
