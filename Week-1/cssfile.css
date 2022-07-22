@@ -16,11 +16,12 @@ body {
     margin-right: 30px;
     
 }
-#bottom {
-    float: left;
-    margin-left: 2.0em;
-    margin-top: 20px;
-    margin-right: 10px;
+#smallImg {
+	
+    margin-left:2em;
+	margin-right:10px;
+    margin-top: 2em;
+    
 }
 
 span {
