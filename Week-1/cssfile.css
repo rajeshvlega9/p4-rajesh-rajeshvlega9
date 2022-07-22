@@ -5,7 +5,6 @@
  font-family: 'Lato',sans-serif;
 }
 
-
 body {
     border: 0spx black;
     display: flex;
@@ -44,7 +43,7 @@ aside i.la {
        margin-top: 0.3em;
        margin-bottom: 1.5em;
    }
-   #top{
+   #top {
     padding: 90px;
     background-color: rgb(71, 68, 64);
     width: auto;
@@ -64,13 +63,11 @@ aside i.la {
     margin-top: 20px;
     line-height: 40%;
    }
-   
 .subtitleClose {
     font-size: small;
     color:azure;
     margin-left: 10px;
    }
-
 ul{
 	display:inline;
 	margin-block-start: 4px;
@@ -87,7 +84,6 @@ li{
 li:nth-child(even) {
     background: lightgrey;
 }
-   
 footer {
 	position:fixed;
 	bottom:0;
@@ -97,7 +93,6 @@ footer {
     background-color: rgb(67, 1, 232);
 	
 }
-
 .subTitleBottom {
     display: flex;
     font-size: small;
@@ -112,7 +107,6 @@ footer {
 	margin-top:50px;
     color: azure;
 	width:40.3em;
-	
 }
  div i.la {
 	margin-right:7em;
