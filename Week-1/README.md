@@ -11,7 +11,7 @@ The Browser user interface have a lot in comment with each other, among them are
 
 ## High level Architecture of the Web Browser:
 
-<img src="./Week-1/highlevel-arch.jpg"/>
+<img src="./highlevel-arch.jpg"/>
  
 1.	***The User Interface:*** This is the space where the user interacts with the browser, this is where the user gets the appropriate response from the request made.
 2.	***The Browser Engine:*** This acts like a bridge between User interface and the render engine, according to the user input from the user interface, it queries and manipulates the render engine.
@@ -23,10 +23,10 @@ The Browser user interface have a lot in comment with each other, among them are
 
 ## DOM Tree:
 The below example is for the DOM(Document Object Model) tree for HTML
-<img src="./Week-1/dom-tree.jpg"/> 
+<img src="./dom-tree.jpg"/> 
 
 ## Render Engine’s main flow:
-<img src="./Week-1/render-mainflow.jpg"/> 
+<img src="./render-mainflow.jpg"/> 
  
 1.	Building a DOM tree: Get the data from Network layer, Parse the HTML, Create DOM Nodes(by elements). 
 2.	Build Render Tree: Parse CSS, using the DOM Nodes and Parsed CSS information, build a Render tree. 
@@ -35,7 +35,7 @@ The below example is for the DOM(Document Object Model) tree for HTML
 
 
 ## CSS Parsing 
-<img src="./Week-1/css-parse.jpg"/> 
+<img src="./css-parse.jpg"/> 
  
 The lexical grammar (vocabulary) is defined by regular expressions for each token:
 comment   \/\*[^*]*\*+([^/*][^*]*\*+)*\/
@@ -72,7 +72,7 @@ pseudo
   ;
 
 ## Tree Construction for the Sample HTML page
-<img src="./Week-1/tree-constr.jpg"/> 
+<img src="./tree-constr.jpg"/> 
 The input to the tree construction stage is a sequence of tokens from the tokenization stage. The first mode is the "initial mode". Receiving the "html" token will cause a move to the "before html" mode and a reprocessing of the token in that mode. This will cause creation of the HTMLHtmlElement element, which will be appended to the root Document object.
 The state will be changed to "before head". The "body" token is then received. An HTMLHeadElement will be created implicitly although we don't have a "head" token and it will be added to the tree.
 We now move to the "in head" mode and then to "after head". The body token is reprocessed, an HTMLBodyElement is created and inserted and the mode is transferred to "in body".
