@@ -33,7 +33,7 @@ display: none;
 #app1{
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color:yellow;
     transition-property: transform;
     transition-duration: 0.7s;
     transition-timing-function: ease-in-out;
@@ -41,7 +41,7 @@ display: none;
    #app2{
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: blue;
     transition-property: transform;
     transition-duration: 0.7s;
     transition-timing-function: ease-in-out;
@@ -49,7 +49,7 @@ display: none;
    #app3{
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: green;
     transition-property: transform;
     transition-duration: 0.7s;
     transition-timing-function: ease-in-out;
@@ -61,4 +61,14 @@ display: none;
    .main:hover #app1{
     transform: translate(100px,0px) rotate(90deg);
    }
-   
+
+   .main:hover #app2{
+    transform: translate(100px,0px) rotate(-90deg);
+   }
+   .main:hover #app3{
+    transform: translate(100px,0px) rotate(-90deg);
+   }
+
+   .main:hover p{
+    display: block;
+   }
