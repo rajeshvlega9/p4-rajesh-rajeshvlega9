@@ -56,10 +56,10 @@ display: none;
    }
 
    .main:hover #app{
-    transform: translate(100px,0px) rotate(90deg);
+    transform: translate(-100px,0px) rotate(90deg);
    }
    .main:hover #app1{
-    transform: translate(100px,0px) rotate(90deg);
+    transform: translate(-100px,0px) rotate(90deg);
    }
 
    .main:hover #app2{
