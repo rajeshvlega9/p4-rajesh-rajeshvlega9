@@ -1,0 +1,12 @@
+.main {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition-property: transform;
+}
+
+div > p{
+position:absolute;
+font-size: 40px;
+}
