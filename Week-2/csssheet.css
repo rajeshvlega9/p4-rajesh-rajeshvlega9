@@ -1,12 +1,8 @@
 *{
     background-color: rgb(205, 163, 84); 
     font-family: Helvetica;
-
+    box-sizing: border-box;
 } 
-
-body {
-    width: auto;
-}
 
 h1 {
     text-align: center;
@@ -14,7 +10,9 @@ h1 {
     font-weight: bold;
 }
 
-
+.image {
+    align-self: center;
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -25,31 +23,33 @@ h1 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 15px;
+    font-style: oblique;
+    text-align: justify;
 }
 .content div{
     margin:10px 10px 10px;
     border: 2px #ccc solid;
     padding-left:2px;
     padding-right:2px;  
-    
-}
+ }
 
 .contentL {
     display: flex;
     flex-direction: column;
-    flex-basis: 45%;
+    flex: 45%; 
 }
 
 .contentR {
     display: flex;
-    flex-basis: 45%;
+    flex: 45%;
     flex-direction: column;
 }
 
-@media (max-width: 800px) {
-    .content {
-        flex-direction: column;
+@media (max-width: 700px) {
+     .contentL, .contentR {
+        flex:100%;
+
     }
 }
 
