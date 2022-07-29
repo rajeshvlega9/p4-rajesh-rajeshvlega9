@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(205, 163, 84); 
+    font-family: Helvetica;
+} 
+
+#content {
+    display: flex;
+    flex-direction: column;
+    border: 2px #ccc solid;
+    flex-wrap: wrap;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+#content div{
+    margin:10px 10px 10px;
+    flex-basis: 45%;
+    align-items: flex-end;
+    border: 2px #ccc solid;
+    padding-left:2px;
+    padding-right:2px;
+    flex:1;
+}
+
+
+.button:hover {
+    background-color: lightslategray;
+}
