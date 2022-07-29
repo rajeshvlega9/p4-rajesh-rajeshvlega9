@@ -68,3 +68,8 @@ p {
 .button:hover {
     background-color: lightslategray;
 }
+
+a:hover {
+ background-color: black;
+ color: whitesmoke;
+}
