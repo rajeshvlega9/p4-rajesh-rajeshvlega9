@@ -35,27 +35,44 @@
         </div>
     </div>
         </div>
-        <div class="fieldset">
+        <div >
             <fieldset>
                 <legend></legend>
                     <form action="return false;">
-                        <p>Title <input type="radio" name="r1" value="title" required/>Mr
-                            <input type="radio" name="r1" value="title"/>Mrs
-                            <input type="radio" name="r1" value="title"/>Miss</p>
-                        <p> Password
-                        <input type="password" required minlength="8" maxlength="12"/></p>
-                        <p> Confirm Password
-                            <input type="password" required minlength="8" maxlength="12"/></p>
-                        <p> Country <select required>
+                        <ul class="fieldset">
+                        <li>Title <input type="radio" name="r1" value="title" required>Mr
+                            <input type="radio" name="r1" value="title">Mrs
+                            <input type="radio" name="r1" value="title">Miss</li>
+                        <li><label for="fname">First Name</label>
+                            <input type="text" id="fname" required maxlength="25">
+                        </li>
+                        <li><label for="lname">Last Name</label>
+                            <input type="text" id="lname" required maxlength="25">
+                        </li>
+                        <li><label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </li>
+                        <li><label for="phno">Phone No</label>
+                            <input type="text" id="phno" required pattern="^[0-9]{10}" minlength="10" 
+                             title="Enter valid phone number">
+                        </li>
+                        <li><label for="pass">Password</label>
+                        <input type="password" id="pass" required minlength="8" maxlength="12"
+                        pattern="^[a-z0-9]{8,12}$" title="Password may only contain letters and numbers"></li>
+                        <li><label for="rpass">Repeat Password</label>
+                            <input type="password" id="rpass" required minlength="8" maxlength="12"></li>
+                        <li> <label for="country">Country</label>
+                             <select required id="country">
                                 <option>India</option>
                                 <option>USA</option>
                                 <option>Canada</option>
                                 <option>UK</option>    
-                            </select></p>
-                        <p><input type="checkbox" required> 
+                            </select></li>
+                        <li><input type="checkbox" required> 
                             I agree to <a href="https://generator.lorem-ipsum.info/terms-and-conditions" target="_blank">
-                                Terms and Conditions</a></p>
-                        <input class="button" type="submit" value="Submit"/>
+                                Terms and Conditions</a></li>
+                        <li><input class="button" type="submit" value="Submit"/></li>
+                    </ul>
                         </form>
             </fieldset>
         </div>
