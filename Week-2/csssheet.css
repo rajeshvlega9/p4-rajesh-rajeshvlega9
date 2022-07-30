@@ -11,6 +11,7 @@ h1 {
     color:brown;
     background-color: lightgreen;
     border: 2px #000 solid;
+    animation: head 2s infinite;
 }
 
 .image {
@@ -30,6 +31,10 @@ p {
     font-style: oblique;
     text-align: justify;
     color:black;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:2px;
+    padding-bottom:2px;
 }
 .content div{
     margin:10px 10px 10px;
@@ -72,4 +77,19 @@ p {
 a:hover {
  background-color: black;
  color: whitesmoke;
+}
+
+@keyframes head {
+0%{
+   background-color: blanchedalmond; 
+   color:black;
+}
+50%{
+    background-color: lightgreen;  
+    color:grey
+}
+100%{
+    background-color: chocolate;    
+    color:white;
+}    
 }
