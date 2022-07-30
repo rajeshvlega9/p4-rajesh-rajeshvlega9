@@ -62,11 +62,17 @@ p {
     }
 }
 
-.fieldset {
-   list-style: none;
-    margin-top: 5px;
+.fieldlayout {
+ display: flex;
+ flex-direction: column;
 }
-.fieldset li{
+
+.fieldset {
+   flex-basis: content;
+   list-style: none;
+   margin-top: 5px;
+}
+.label-input{
     display: flex;
     justify-content: center;
     padding: 0.5em 1em 1em 0.5em;
@@ -74,8 +80,9 @@ p {
 .fieldset li:nth-child(1){
     display: block;
 }
-.fieldset li:nth-child(9){
+.fieldset li:nth-child(9), .fieldset li:nth-child(8) {
     display: block;
+    padding: 0.5em 1em 1em 0.5em;
 }
 label {
     flex:1;
@@ -90,6 +97,7 @@ input {
 select {
     flex: 1;
 }
+
 
 .button {
     width: 100px;
