@@ -1,0 +1,128 @@
+* {
+  background-color: rgb(205, 163, 84);
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: brown;
+  background-color: lightgreen;
+  border: 2px #000 solid;
+  animation: head 2s infinite;
+}
+
+.image {
+  align-self: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  border: 2px #ccc solid;
+  padding-left: 2px;
+  padding-right: 2px;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 13px;
+  font-style: oblique;
+  text-align: justify;
+  color: black;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.content div {
+  margin: 10px 10px 10px;
+  border: 2px #ccc solid;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.contentL {
+  display: flex;
+  flex-direction: column;
+  flex: 45%;
+}
+
+.contentR {
+  display: flex;
+  flex: 45%;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  .contentL,
+  .contentR {
+    flex: 100%;
+  }
+}
+
+.fieldlayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  flex-basis: content;
+  list-style: none;
+  margin-top: 5px;
+}
+.label-input {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 1em 1em 0.5em;
+}
+.fieldset li:nth-child(1) {
+  display: block;
+}
+.fieldset li:nth-child(9),
+.fieldset li:nth-child(8) {
+  display: block;
+  padding: 0.5em 1em 1em 0.5em;
+}
+label {
+  flex: 1;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+input {
+  flex: 5;
+}
+
+.button {
+  width: 100px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.button:hover {
+  background-color: lightslategray;
+}
+
+a:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+@keyframes head {
+  0% {
+    background-color: blanchedalmond;
+    color: black;
+  }
+  50% {
+    background-color: lightgreen;
+    color: grey;
+  }
+  100% {
+    background-color: chocolate;
+    color: white;
+  }
+}
