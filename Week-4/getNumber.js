@@ -13,12 +13,19 @@ class myPromise {
         const resolve = (value) => {
             this.isResolved = true;
             this.resolvedData = value;
+            
+            if (typeof this.thenFunc === 'function') {
+                this.thenFunc(this.resolvedData);
+            }
         }
 
         //Reject with reason
         const reject = (reason) => {
             this.isRejected = true;
             this.rejectedData = reason;
+            if (typeof this.catchFunc === 'function') {
+                this.catchFunc(this.rejectedData)
+            }
         }
         exe(resolve, reject);
     }
@@ -46,11 +53,13 @@ var randNum = getNumber();
 console.log(randNum);
 
 let prom = new myPromise((resolve, reject) => {
-    if (randNum % 5 === 0) {
-        reject(randNum);
-    } else {
-        resolve(randNum);
-    }
+    setTimeout(() => {
+        if (randNum % 5 === 0) {
+            reject(randNum);
+        } else {
+            resolve(randNum);
+        }
+    }, 1000);
 });
 
 prom.then((randNum) => {
