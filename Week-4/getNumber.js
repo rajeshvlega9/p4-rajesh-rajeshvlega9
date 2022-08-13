@@ -9,24 +9,30 @@ class myPromise {
 
     constructor(exe) {
         
-        //resolve
-        const resolve(value) {
+        //resolve with Value
+        const resolve = (value) => {
             this.isResolved = true;
             this.resolvedData = value;
         }
 
         //Reject with reason
-        const reject(reason) {
+        const reject = (reason) => {
             this.isRejected = true;
             this.rejectedData = reason;
         }
         exe(resolve, reject);
     }
     then(fun) {
-        
+        this.thenFunc = fun;
+        if (this.isResolved) {
+            this.thenFunc(this.resolvedData);
+        }
     }
     catch(fun) {
-
+        this.catchFunc = fun;
+        if (this.isRejected) {
+            this.catchFunc(this.rejectedData);
+        }
     }
 
 }
@@ -47,4 +53,9 @@ let prom = new myPromise((resolve, reject) => {
     }
 });
 
-prom.
+prom.then((randNum) => {
+    console.log(`Resolved - ${randNum} is not divisible by 5`);
+});
+prom.catch((randNum) => {
+    console.log(`Rejected - ${randNum} is divisible by 5`);
+});
