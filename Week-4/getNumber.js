@@ -1,9 +1,8 @@
 // custom Promise function without external libraries
-
+[FULFILLED , REJECTED , PENDING] = ['FULFILLED', 'REJECTED', 'PENDING']; 
 /* class for myPromis */
 class myPromise {
-  /* Defining the states */
- [FULFILLED, REJECTED, PENDING] = ['FULFILLED', 'REJECTED', 'PENDING'];  
+  /* Defining the states */ 
   state;
   isResolved = false;
   isRejected = false;
