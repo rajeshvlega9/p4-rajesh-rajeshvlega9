@@ -16,7 +16,9 @@ Person.prototype.initialize = function (name, age) {
 // this would create a class with constructor 
 class Teacher { }
 // assigning the function initialize to Teacher class
-Teacher.prototype.initialize = Person.prototype.initialize;
+// Teacher.prototype.initialize = Person.prototype.initialize;
+// calling the setPrototypeOf method instead of directly assigning
+Object.setPrototypeOf(Teacher.prototype, Person.prototype);
 // creating method teach for teacher.
 Teacher.prototype.teach = function (subject) {
     console.log(`${this.name} is now teaching ${subject}`);
