@@ -1,24 +1,11 @@
 function vowelCount(text) {
   let vowelMap = new Map();
   let i = 0;
-  var temp = text.toString();
-
+  var vowels = 'aeiou';
+  var temp = text.toString().toLowerCase();
+  
   for (i = 0; i < temp.length; i++) {
-    if (
-      temp[i] == "a" ||
-      temp[i] == "e" ||
-      temp[i] == "i" ||
-      temp[i] == "o" ||
-      temp[i] == "u"
-    ) {
-      vowelMap.set(i, temp[i]);
-    } else if (
-      temp[i] == "A" ||
-      temp[i] == "E" ||
-      temp[i] == "I" ||
-      temp[i] == "O" ||
-      temp[i] == "U"
-    ) {
+    if( vowels.includes(temp[i]) ) { 
       vowelMap.set(i, temp[i]);
     }
   }
