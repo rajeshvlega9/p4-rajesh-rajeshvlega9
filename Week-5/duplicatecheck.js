@@ -1,8 +1,9 @@
 function duplicateCheck(arr) {
-  var set = new Set();
-  for (let el of arr) {
-    set.add(el);
-  }
+  var set = new Set(arr);
+  // for (let el of arr) {
+  //   set.add(el);
+  // }
+  // set.add(arr);
   //if the size of the set and the array length are same
   //then there are no duplicates, else we have duplicates.
   if (set.size === arr.length) {
@@ -21,3 +22,5 @@ console.log("\n");
 console.log("/-------------------------/\n");
 console.log("Second array checking duplicates:" + arr2);
 console.log(duplicateCheck(arr2)); //output - false
+console.log("\n");
+console.log("/-------------------------/\n");
