@@ -12,8 +12,8 @@ function matrix(m, n) {
   }
   return arrX;
 }
-
-function spiralOrder(matrix) {
+// this spiralOrder3 version which is created on
+function spiralOrder3(matrix) {
   var numbers = [];
   let k = 0;
   let i = 0;
@@ -57,17 +57,48 @@ function spiralOrder(matrix) {
   return numbers;
 }
 
+function spiralOrder(matrix) {
+  let numbers = [];
+  let lcol = matrix[0].length - 1,
+    lrow = matrix.length - 1;
+  let frow = 0,
+    fcol = 0;
+  while (frow <= lrow && fcol <= lcol) {
+    // first row
+    for (let i = fcol; i <= lcol; i++) numbers.push(matrix[frow][i]);
+    frow++;
+    // last column
+    for (i = frow; i <= lrow; i++) numbers.push(matrix[i][lcol]);
+    lcol--;
+    //bottow row
+    for (i = lcol; i >= fcol; i--) numbers.push(matrix[lrow][i]);
+    lrow--;
+    //first col
+    for (i = lrow; i >= frow; i--) numbers.push(matrix[i][fcol]);
+    fcol++;
+  }
+  return numbers;
+}
+
 var mat33 = matrix(3, 3);
 console.log("Matrix of 3,3 -> \n");
 console.log(mat33);
 console.log("\n");
 console.log("Spiral Order for matrix 3,3 -> \n");
 console.log(spiralOrder(mat33));
-
+// console.log(spiralOrder3(mat33));
 
 var mat34 = matrix(3, 4);
 console.log("Matrix of 3,4 -> \n");
 console.log(mat34);
 console.log("\n");
 console.log("Spiral Order for matrix 3,4 -> \n");
+// console.log(spiralOrder3(mat34));
 console.log(spiralOrder(mat34));
+
+var mat55 = matrix(5, 5);
+console.log("Matrix of 6,6 -> \n");
+console.log(mat55);
+console.log("\n");
+console.log("Spiral Order for matrix 5,5 -> \n");
+console.log(spiralOrder(mat55));
