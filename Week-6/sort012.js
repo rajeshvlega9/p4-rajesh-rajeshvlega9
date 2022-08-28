@@ -2,6 +2,7 @@ function sortArr(arr, size) {
   var num0 = 0;
   var num1 = 0;
   var num2 = 0;
+  let i = 0;
   let sort = [];
   for (let e of arr) {
     switch (e) {
@@ -17,28 +18,44 @@ function sortArr(arr, size) {
       default:
     }
   }
-  while (num0 !== 0) {
-    sort.push(0);
-    num0--;
+  // while (num0 !== 0) {
+  //   sort.push(0);
+  //   num0--;
+  // }
+  // while (num1 !== 0) {
+  //   sort.push(1);
+  //   num1--;
+  // }
+  // while (num2 !== 0) {
+  //   sort.push(2);
+  //   num2--;
+  // }
+
+  // return sort;
+  while (i < num0) {
+    arr[i] = 0;
+    i++;
   }
-  while (num1 !== 0) {
-    sort.push(1);
-    num1--;
+  while (i < num0 + num1) {
+    arr[i] = 1;
+    i++;
   }
-  while (num2 !== 0) {
-    sort.push(2);
-    num2--;
+  while (i < num0 + num1 + num2) {
+    arr[i] = 2;
+    i++;
   }
 
-  return sort;
+  console.log(`Sorted Array -> ${arr}`);
 }
 
 var array1 = [0, 2, 1, 2, 0];
 var array2 = [2, 1, 0, 1, 2, 1, 0, 1, 0, 2];
-console.log("Sort for Array: " + array1);
-console.log(sortArr(array1, array1.length));
+console.log("Unsorted Array: " + array1);
+// console.log(sortArr(array1, array1.length));
+sortArr(array1, array1.length);
 console.log("\n");
 
-console.log("Sort for Array: " + array2);
-console.log(sortArr(array2, array2.length));
+console.log("Unsorted Array: " + array2);
+// console.log(sortArr(array2, array2.length));
+sortArr(array2, array2.length);
 console.log("\n");
