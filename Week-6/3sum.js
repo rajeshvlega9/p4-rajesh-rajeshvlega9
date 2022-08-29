@@ -1,4 +1,4 @@
-function threeSum(arr, target) {
+function threeSum1(arr, target) {
   let result = "";
 
   for (let i = 0; i < arr.length - 2; i++) {
@@ -8,6 +8,27 @@ function threeSum(arr, target) {
           result = "(" + arr[i] + "," + arr[j] + "," + arr[k] + ")";
           return result;
         }
+      }
+    }
+  }
+  return false;
+}
+function threeSum(arr, target) {
+  let l, r;
+  let result;
+  // arr.sort((a, b) => a - b); //same as sort
+  arr.sort();
+  for (i = 0; i < arr.length - 2; i++) {
+    l = 0;
+    r = arr.length - 1;
+    while (l < r) {
+      if (arr[i] + arr[l] + arr[r] === target) {
+        result = "(" + arr[i] + "," + arr[l] + "," + arr[r] + ")";
+        return result;
+      } else if (arr[i] + arr[l] + arr[r] < target) {
+        l++;
+      } else {
+        r--;
       }
     }
   }
