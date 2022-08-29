@@ -97,7 +97,7 @@ console.log("Spiral Order for matrix 3,4 -> \n");
 console.log(spiralOrder(mat34));
 
 var mat55 = matrix(5, 5);
-console.log("Matrix of 6,6 -> \n");
+console.log("Matrix of 5,5 -> \n");
 console.log(mat55);
 console.log("\n");
 console.log("Spiral Order for matrix 5,5 -> \n");
