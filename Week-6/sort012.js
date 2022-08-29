@@ -18,20 +18,6 @@ function sortArr(arr, size) {
       default:
     }
   }
-  // while (num0 !== 0) {
-  //   sort.push(0);
-  //   num0--;
-  // }
-  // while (num1 !== 0) {
-  //   sort.push(1);
-  //   num1--;
-  // }
-  // while (num2 !== 0) {
-  //   sort.push(2);
-  //   num2--;
-  // }
-
-  // return sort;
   while (i < num0) {
     arr[i] = 0;
     i++;
