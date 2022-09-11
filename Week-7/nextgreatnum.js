@@ -26,23 +26,34 @@ const nextGE = function (arr) {
 const nextGE1 = function (arr) {
   var n = arr.length;
   let s = [];
-    
+
   for (let i = 0; i < n; i++) {
     while (s.length > 0 && s[s.length - 1]["v"] < arr[i]) {
       var v = s.pop();
       arr[v["i"]] = arr[i];
-      }
-      // push the value to the stack with map
+    }
+    // push the value to the stack with map
     s.push({ v: arr[i], i: i });
-
   }
-// updating the array 
+  // updating the array
   while (s.length > 0) {
     v = s.pop();
     arr[v["i"]] = -1;
   }
   return arr;
 };
+
+// this works for circular array
+
+function nextGE2(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let sl = arr.slice(i);
+    let num = sl.find((e) => e > arr[i]) ?? arr.find((e) => e > arr[i]) ?? -1;
+    result.push(num);
+  }
+  return result;
+}
 
 let a1 = [1, 3, 2, 4];
 console.log(`for ${a1}`);
@@ -51,3 +62,7 @@ console.log(nextGE1(a1));
 let a2 = [6, 8, 0, 1, 3];
 console.log(`for ${a2}`);
 console.log(nextGE1(a2));
+
+let a3 = [1, 2, 3, 4, 3];
+console.log(`for ${a3}`);
+console.log(nextGE2(a3));
