@@ -32,9 +32,11 @@ var isValidBST = function (root) {
 };
 
 let a1 = [2, 1, 3];
+console.log(a1);
 let root1 = createTree(a1);
 console.log(isValidBST(root1));
 
 let a2 = [5, 1, 4, null, null, 3, 6];
+console.log(a2);
 let root2 = createTree(a2);
 console.log(isValidBST(root2));
