@@ -3,8 +3,11 @@ import React from "react";
 function FormTodo({ addTodo }) {
     const [value, setValue] = React.useState("");
     const handleSubmit = e => {
+        //avoid refresh
         e.preventDefault();
+        // if no value or text then return
         if (!value) return;
+        // add todo 
         addTodo(value);
         setValue("");
     };
@@ -15,10 +18,11 @@ function FormTodo({ addTodo }) {
             <input
                 type="text"
                 className="text-box"
-                name="text" value={value}
+                name="text"
+                value={value}
                 onChange={e => setValue(e.target.value)}
-                placeholder=""/>
-            <button type="submit">Add</button>
+            />
+            <button className="add-button" type="submit">Add</button>
         </form></div>
     );
 }
