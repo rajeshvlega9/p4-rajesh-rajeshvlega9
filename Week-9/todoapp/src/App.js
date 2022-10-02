@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import FormTodo from './FormTodo';
-import Todo from './Todo';
+import FormTodo from './FormTodo.js';
+import Todo from './Todo.js';
 
 function App() {
   // Todo Object
