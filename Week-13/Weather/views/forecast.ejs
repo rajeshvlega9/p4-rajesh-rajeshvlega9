@@ -1,14 +1,51 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>    
 <title> Weather APP - Forecast </title>
-
+<link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <%- include('partials/nav.ejs') %>
-</body>
+        <div class=".content">
+        <%- include('partials/nav.ejs') %>
+        </div>
+        <form action="" method="POST">
+            <div class="header">
+            <input name="place" type="text" placeholder="Enter a place name">
+            <input name="period" type="number">
+            <input type="submit" value ="Get Forecast">
+            </div>
+            
+            <section>
+                <% if(location!==null) { %>
+                    <p><%= location.name %> | <%= location.region %> | <%= location.country %> </p>
+                    <% } %>
+                <% if (lineItems!==null) {%>
+                <ul>
+                    <li><span>Date</span></li>
+                    <li><span>Max ℃</span></li>
+                    <li><span>Min ℃</span></li>
+                    <li><span>Max wind(kph)</span></li>
+                    <li><span>Avg Humidity</span></li>
 
+                    <% lineItems.forEach((item,index) => { %>
+                        <% item.forEach((itm,ind) => { %>
+                        <li>  <%= itm.date %> </li>
+                        <li> <%= itm.day.maxtemp_c %> </li>
+                        <li><%= itm.day.mintemp_c %> </li>
+                        <li><%= itm.day.maxwind_kph %> </li>
+                        <li> <%= itm.day.avghumidity %> </li>
+                        <% }) %>
+                     <% }) %>   
 
+                </ul>
+                    <% } %> 
+                <% if(error!==null) {%>
+                    <p id="error">Error : <%= error%></p>
+                   <% } %>
+            </section>
+            </form>
+    </body>
 <footer>
  <%- include('partials/footer.ejs') %>
 </footer>

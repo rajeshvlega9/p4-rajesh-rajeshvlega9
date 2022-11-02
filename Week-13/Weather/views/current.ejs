@@ -13,7 +13,8 @@
         <input name="city" type="text" placeholder="Enter a place name">
         <input type="submit" value ="Get Weather">
     </div>
-        <div class=".flex">
+        <section>
+            <div class=".flex"></div>
             <% if(city!==null) { %>
              <p>Place | <%= city %>, <%= region %></p>
              <p>Temperature <%= temp_c%> ℃, <%= cond_text%></p> 
@@ -24,7 +25,8 @@
             <% if(error!==null) {%>
              <p id="error">Error : <%= error%></p>
             <% } %>
-         </div>
+            <div class=".flex"></div>
+        </section>
         
     </form>
 </body>
